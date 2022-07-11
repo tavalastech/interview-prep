@@ -48,17 +48,17 @@ public class Main {
 
 
         //ASCII Values
-        Scanner scanner = new Scanner(System.in);
-        boolean areYouDone = false;
-        while (!areYouDone) {
-            System.out.println("Find the ASCII value of?");
-            String input = scanner.nextLine();
-            byte byteInput = (byte) input.charAt(0);
-            System.out.println("This is ASCII value for the character: " + byteInput);
-            System.out.println("Are you done? (y/n)");
-            String done = scanner.nextLine();
-            if (done.toUpperCase().charAt(0) == 'Y') {
-                areYouDone = true;
+        Scanner scanner = new Scanner(System.in); // Scanner scans for input
+        boolean areYouDone = false; // Loop Conditional
+        while (!areYouDone) {               // while areYouDone is false 
+            System.out.println("Find the ASCII value of?"); // Print Prompt
+            String input = scanner.nextLine();      // Scan for next input
+            byte byteInput = (byte) input.charAt(0);    // Convert first char into ASCII value
+            System.out.println("This is ASCII value for the character: " + byteInput); // Print ASCII value
+            System.out.println("Are you done? (y/n)");  // Print "Are you done?"
+            String done = scanner.nextLine();   // Scan next line for input
+            if (done.toUpperCase().charAt(0) == 'Y') { // if input start with a 'Y' areYouDone to True
+                areYouDone = true;     
             }
         }
 
