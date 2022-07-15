@@ -4,3 +4,4 @@ java/javacourse/*.iml
 java/.idea
 .idea
 .DS_Store
+projects/*
